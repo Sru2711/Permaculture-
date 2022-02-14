@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>
+        Agro Farm
+    </title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sign-In</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Products</a>
+                <a class="dropdown-item" href="#">Contact</a>
+                <div class="dropdown-divider"></div>
+                
+              </div>
+            </li>
+            
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+     <div>
+        <h1 class="text-center  h1">Just Food</h1>
+    </div>   
+    <div class="container-fluid division">
+        
+        <div class="col-md-9">
+          <img src="./assets/animal.jpg" class="image1">
+        </div>
+        <div class="col-md-3 div1">
+          <h3 class="text-center "> Sign-In</h3><br>
+         <form class="text-center">
+           <img src="./assets/profile.png" class="image2 "><br><br>
+           Email Id: <input type="email" placeholder="Email-Id"><br><br>
+           Password: <input type="Password" placeholder="Password"><br><br>
+           Confirm it: <input type="Password" placeholder="Password"><br><br>
+          <button type="button" class="btn btn-warning button">Sign in</button>
+          </form>  
+       </div>
+      </div>
+      <div>
+        <blockquote>
+          <span class="span text-center">-Farming looks mighty easy when your plow is a pencil, and you're a thousand miles
+            from the corn field.</span>
+          </blockquote>
+      </div>
+      <h3 class="text-center">Add to Cart</h3>
+      <div class="division3">
+        <div class="container-fluid division2 mb-3">
+         <div class="col-md-4">
+           <div class="div2">
+           <img src="./assets/cheese.png" class="image3"><br>
+           <h4 class="text-center">Cheese Slice</h4>
+             
+           <p class="text-center">An individually wrapped slice of  cheese</p>
+           <div class="container3">
+            <img src="./assets/add.png" class="image4" onClick="Add('Cheese')"><h5 class="text-center">
+              <span id="change">1</span>KG
+            </h5><img src="./assets/minus.png" class="image4" onClick="Sub('Cheese')">
+            
+            </div> 
+           <button type="button" class="btn btn-warning button2 mt-3">Buy Now</button>
+          
+              
+          
+           
+           </div>
+         </div>
+         <div class="col-md-4 ">
+           <div class="div2">
+            <img src="./assets/fruits.png" class="image3"><br>
+            <h4 class="text-center">Fruit Basket</h4>
+            <p class="text-center">This Beautiful Fruit Basket<br> 250 GM each</p>
+            
+            <div class="container3">
+              <img src="./assets/add.png" class="image4" onClick="Add('fruit')"><h5 class="text-center">
+                <span id="change-fruit">1</span>KG
+              </h5><img src="./assets/minus.png" class="image4" onClick="Sub('fruit')">
+              
+              </div> 
+            <button type="button" class="btn btn-warning button2 mt-3">Buy Now</button> 
+           </div>
+          </div>
+          <div class="col-md-4 ">
+           <div class="div2">
+            
+            <img src="./assets/veggies.png" class="image3"><br>
+            <h4 class="text-center">Vegetable Basket</h4>
+            <p class="text-center">Organic Vegetable Box (Standard)<br>250 GM each</p>
+            <div class="container3">
+              <img src="./assets/add.png" class="image4" onClick="Add('veggie')"><h5 class="text-center">
+               <span id="change-veg">1</span>KG
+              </h5><img src="./assets/minus.png" class="image4" onClick="Sub('veggie')">
+              
+              </div>   
+            <button type="button" class="btn btn-warning button2 mt-3">Buy Now</button>
+                
+             
+           </div>
+         </div>
+       </div>
+        
+        
+
+
+      </div>
+   </div> 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     <script src="./js/agro.js"></script>
+</body>
+</html>
